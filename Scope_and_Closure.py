@@ -74,3 +74,8 @@ def scope():
 
 
 scope()
+
+
+# Closure
+
+# A Closure in Python is a function object that remembers values in enclosing scopes even if they are not present in memory. 
