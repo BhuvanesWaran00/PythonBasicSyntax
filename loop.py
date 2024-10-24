@@ -11,6 +11,9 @@ else:
 for i in range(5) :        #range value is 0 to i-1 by default 
     print(i)
 for n in range(10,15):     # now range value is 10 to 15-1 by default 
+    print(n)   
+
+for n in range(10,101,5):     # now range value is 10 to 100 and increase +5 ex 10,15,20 by default 
     print(n)    
 
 # nested for
