@@ -2,6 +2,8 @@
 
 for vg in [1,2,3,4,5] : 
     print(vg)
+else:
+    print("it\'s over")        # print the statement after loop over
 
 
 # Range
