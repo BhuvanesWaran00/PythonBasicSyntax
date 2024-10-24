@@ -78,4 +78,22 @@ scope()
 
 # Closure
 
-# A Closure in Python is a function object that remembers values in enclosing scopes even if they are not present in memory. 
+# A Closure in Python is a function object that remembers values in enclosing scopes even if they are not in memory. 
+
+apple_count = 0
+def scope():
+    batch=0
+    def scope1():
+        global apple_count
+
+        nonlocal batch
+        apple_count += 10
+        batch += 1
+        print("apples: ",apple_count,"Batchno: b"+str(batch))
+    return scope1
+
+
+scope=scope()
+for i in range(5):
+    scope()
+
