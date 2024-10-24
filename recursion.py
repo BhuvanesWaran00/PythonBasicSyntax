@@ -5,7 +5,7 @@
  """
 
 
-# print factorial of numbers
+# Print a factorial of numbers
 def fact(num):
     if (num == 1):
         return num
@@ -13,5 +13,11 @@ def fact(num):
         return num*fact(num-1)
 
 num=int(input())
-x = fact(num)
-print(x)
+
+if num < 0 :
+    print("Enter Valid input")
+elif num == 0: 
+    print("factorial of 0 is 1")
+else:
+    x = fact(num)
+    print(x)
